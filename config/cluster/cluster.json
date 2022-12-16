@@ -1,0 +1,28 @@
+{
+  "MasterDiscoveryNode":[{
+    "NodeId": 1,
+    "ListenAddr":"127.0.0.1:8801"
+  }
+  ],
+
+
+  "NodeList":[
+    {
+      "NodeId": 1,
+      "version": 0,
+      "ListenAddr":"127.0.0.1:8801",
+      "NodeName": "Node_Master1",
+      "Private": true,
+      "remark":"//以_打头的，表示只在本机进程，不对整个子网开发",
+      "ServiceList": ["MasterService"]
+    },
+    {
+      "NodeId": 2,
+      "ListenAddr":"127.0.0.1:8802",
+      "NodeName": "Node_Login",
+      "Private": false,
+      "remark":"//以_打头的，表示只在本机进程，不对整个子网开发",
+      "ServiceList": ["DaemonService"]
+    }
+  ]
+}
